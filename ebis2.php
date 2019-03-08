@@ -3,26 +3,35 @@
 session_start();
 $fullNameValue = "";
 $totalValue2 = "";
-/*
- * Create a session variable for the mobile number
- */
+$phoneNumber = "";
 $totalValue = $_POST['txtTotal'];
 $_SESSION['txtName'] = $fullNameValue;
 $_SESSION['txtTotal'] = $totalValue2;
+$fullNameValue = $_POST['txtName'];
+$_SESSION['txtNum'] = $phoneNumber
 
-/**
- * Allocate the mobile number session variable to a text box
- */
  
 ?>
 <!DOCTYPE html>
 <html>
     <head>
-        <title>eBusiness 2</title>
+        <style>
+                        h1 { color: red;
+                   
+                }
+body {
+        background-color: pink;
+    }     
+
+* {
+  box-sizing: border-box;
+}
+        </style>
+        <title>Ebusiness 2</title>
     </head>
     <body>
         <div class="form">
-            <form name="Details" method="post" action="Ebus3.php">
+            <form name="Details" method="post" action="Ebis3.php">
                 <center>
                     <table cellspacing="10">
                     <tr>
@@ -31,37 +40,33 @@ $_SESSION['txtTotal'] = $totalValue2;
                     </tr>
                     <tr>
                         <td>Name</td>
-                        <td><input type="text" id="txtName" name="txtName" value=""  /></td>
+                        <td><input type="text" id="txtName" name="txtName" value="" required  /></td>
                     </tr>
                     <tr>
                         <td>Phone number</td>
-                        <td><input type="text" id="txtNum" name="txtNum" value=""  /></td>
+                        <td><input type="text" id = "txtNum" name="txtNum" value="" required /></td>
                     </tr>
-                   
+                  
                     <tr>
-                        <td>Password</td>
-                        <td><input type="text" id="txtPassword" name="txtPassword" value=""  /></td>
+                        <td>PIN</td>
+                        <td> <input type="password"  name="pincode" maxlength="4"  id="pin" pattern="\d{4}" inputmode="numeric" required/>
+                             </td>
                     </tr>
-                   
+                  
                     <tr>
-                       
+                      
                         <td><input type="hidden" id="txtTotal" name="txtTotal" value="<?php echo $totalValue;?>"  /></td>
                     </tr>
                 </table>
             </center>
-           
+          
         <center>
-       
-       
+      
+      
                 <input type="submit" name="btnContinue" id="btnContinue" onclick="" value="Continue"/>
         </center>
         </div>
         </form>
-/*  
-*create session variable  for a mobile number
-*/
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
+
 

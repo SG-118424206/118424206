@@ -8,11 +8,16 @@ $_SESSION['txtTotal'] = $totalValue;
     <head>
         <meta charset="utf-8" />
         <title>Ebusiness 1</title>
-        <link rel="stylesheet" type="text/css" href="Ebus1.css">
+        <link rel="stylesheet" type="text/css" href="Ebis1.php">
+        <style>  body {
+              background-color: pink;
+}
+</style> 
+
     </head>
         <body>
         <div class="form">
-            <form name="intCalc" method="post" action="Ebus2.php">
+            <form name="intCalc" method="post" action="ebis2.php">
         <h1>Shop Calculator</h1>  
         <hr/>
         <center>
@@ -130,9 +135,5 @@ $_SESSION['txtTotal'] = $totalValue;
            
                    
         
-/* 
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 
